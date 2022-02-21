@@ -23,17 +23,17 @@ $INSBASE
   9
 $EXTMIN
  10
--80
+-35.00000000000001
  20
--70
+-35.00000000000001
  30
 0
   9
 $EXTMAX
  10
-50
+35
  20
-80
+35
  30
 0
   9
@@ -91,7 +91,7 @@ STANDARD
   9
 $CLAYER
   8
-0
+Stator
   9
 $CELTYPE
   6
@@ -801,6 +801,10 @@ $PEXTMAX
  30
 0
   9
+$GRIDMODE
+ 70
+    1
+  9
 $SNAPSTYLE
  70
     0
@@ -1111,9 +1115,9 @@ AcDbViewportTableRecord
  21
 1
  12
-71.13016710642307
+40.85783520346558
  22
-42.5461741424818
+26.30145049030429
  13
 0
  23
@@ -1139,9 +1143,9 @@ AcDbViewportTableRecord
  37
 0
  40
-178.5400175901562
+104.8309594364147
  41
-1.623152709359606
+1.66030989272944
  42
 50
  43
@@ -2231,7 +2235,7 @@ AcDbLayerTableRecord
   2
 0
  70
-    0
+    1
  62
     7
   6
@@ -2251,9 +2255,77 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-help
+Mount
  70
     0
+ 62
+   96
+420
+32768
+  6
+CONTINUOUS
+370
+    0
+390
+F
+  0
+LAYER
+  5
+4B
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Rotor
+ 70
+    1
+ 62
+    7
+  6
+CONTINUOUS
+370
+    0
+390
+F
+  0
+LAYER
+  5
+4C
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Stator
+ 70
+    0
+ 62
+    7
+  6
+CONTINUOUS
+370
+    0
+390
+F
+  0
+LAYER
+  5
+4D
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+help
+ 70
+    1
  62
     7
   6
@@ -2279,7 +2351,7 @@ AcDbSymbolTable
   0
 STYLE
   5
-4B
+4E
 330
 2
 100
@@ -2363,7 +2435,7 @@ ACAD
   0
 APPID
   5
-4C
+4F
 330
 9
 100
@@ -2395,7 +2467,7 @@ AcDbDimStyleTable
   0
 DIMSTYLE
 105
-4D
+50
 330
 A
 100
@@ -2407,7 +2479,7 @@ Standard
  70
     0
  40
-1
+2.5
  41
 2.5
  42
@@ -2431,7 +2503,7 @@ Standard
 141
 0.09
 142
-2.5
+0
 143
 25.4
 144
@@ -2459,7 +2531,7 @@ Standard
  77
     0
  78
-    1
+    8
  79
     0
 170
@@ -2497,7 +2569,7 @@ Standard
 277
     2
 278
-    0
+   44
 279
     0
 280
@@ -2519,7 +2591,7 @@ Standard
 289
     3
 340
-standard
+STANDARD
 341
 
 371
@@ -2667,13 +2739,131 @@ SECTION
   2
 ENTITIES
   0
-ARC
+CIRCLE
   5
-4E
+51
 100
 AcDbEntity
   8
+Rotor
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
 0
+ 20
+0
+ 40
+35
+  0
+LINE
+  5
+52
+100
+AcDbEntity
+  8
+Rotor
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-4
+ 20
+-4
+ 11
+4
+ 21
+-4
+  0
+LINE
+  5
+53
+100
+AcDbEntity
+  8
+Rotor
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+4
+ 20
+-4
+ 11
+4
+ 21
+4
+  0
+LINE
+  5
+54
+100
+AcDbEntity
+  8
+Rotor
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+4
+ 20
+4
+ 11
+-4
+ 21
+4
+  0
+LINE
+  5
+55
+100
+AcDbEntity
+  8
+Rotor
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
+-4
+ 20
+4
+ 11
+-4
+ 21
+-4
+  0
+ARC
+  5
+56
+100
+AcDbEntity
+  8
+Stator
   6
 ByLayer
  62
@@ -2697,11 +2887,11 @@ AcDbArc
   0
 ARC
   5
-4F
+57
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -2725,11 +2915,11 @@ AcDbArc
   0
 ARC
   5
-50
+58
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -2753,11 +2943,11 @@ AcDbArc
   0
 ARC
   5
-51
+59
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -2781,11 +2971,11 @@ AcDbArc
   0
 ARC
   5
-52
+5A
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -2809,11 +2999,11 @@ AcDbArc
   0
 ARC
   5
-53
+5B
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -2837,11 +3027,11 @@ AcDbArc
   0
 ARC
   5
-54
+5C
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -2865,11 +3055,11 @@ AcDbArc
   0
 ARC
   5
-55
+5D
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -2893,11 +3083,11 @@ AcDbArc
   0
 ARC
   5
-56
+5E
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -2921,11 +3111,11 @@ AcDbArc
   0
 ARC
   5
-57
+5F
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -2949,11 +3139,11 @@ AcDbArc
   0
 ARC
   5
-58
+60
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -2977,11 +3167,11 @@ AcDbArc
   0
 ARC
   5
-59
+61
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -3005,11 +3195,11 @@ AcDbArc
   0
 ARC
   5
-5A
+62
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -3033,11 +3223,11 @@ AcDbArc
   0
 ARC
   5
-5B
+63
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -3061,11 +3251,11 @@ AcDbArc
   0
 ARC
   5
-5C
+64
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -3089,11 +3279,11 @@ AcDbArc
   0
 ARC
   5
-5D
+65
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -3117,11 +3307,11 @@ AcDbArc
   0
 CIRCLE
   5
-5E
+66
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -3137,13 +3327,13 @@ AcDbCircle
  40
 6
   0
-LINE
+CIRCLE
   5
-5F
+67
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -3151,23 +3341,197 @@ ByLayer
 370
    -1
 100
-AcDbLine
+AcDbCircle
  10
--80
+-29
  20
+29
+ 40
+2.65
+  0
+CIRCLE
+  5
+68
+100
+AcDbEntity
+  8
+Stator
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+29
+ 20
+29
+ 40
+2.65
+  0
+CIRCLE
+  5
+69
+100
+AcDbEntity
+  8
+Stator
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+-29.00000000000001
+ 20
+-28.99999999999999
+ 40
+2.65
+  0
+CIRCLE
+  5
+6A
+100
+AcDbEntity
+  8
+Stator
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+28.99999999999999
+ 20
+-29.00000000000001
+ 40
+2.65
+  0
+CIRCLE
+  5
+6B
+100
+AcDbEntity
+  8
+Mount
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+-29
+ 20
+29
+ 40
+6.000000000000003
+  0
+CIRCLE
+  5
+6C
+100
+AcDbEntity
+  8
+Mount
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+-29
+ 20
+29
+ 40
+2.649999999999999
+  0
+CIRCLE
+  5
+6D
+100
+AcDbEntity
+  8
+Mount
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+29
+ 20
+29
+ 40
+6.000000000000003
+  0
+CIRCLE
+  5
+6E
+100
+AcDbEntity
+  8
+Mount
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+29
+ 20
+29
+ 40
+2.649999999999999
+  0
+CIRCLE
+  5
+6F
+100
+AcDbEntity
+  8
+Mount
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+28.99999999999999
+ 20
+-29.00000000000001
+ 40
+6.000000000000003
+  0
+CIRCLE
+  5
 70
- 11
--60
- 21
-70
-  0
-LINE
-  5
-60
 100
 AcDbEntity
   8
-0
+Mount
   6
 ByLayer
  62
@@ -3175,23 +3539,21 @@ ByLayer
 370
    -1
 100
-AcDbLine
+AcDbCircle
  10
--70
+28.99999999999999
  20
-80
- 11
--70
- 21
-60
+-29.00000000000001
+ 40
+2.649999999999999
   0
-LINE
+CIRCLE
   5
-61
+71
 100
 AcDbEntity
   8
-0
+Mount
   6
 ByLayer
  62
@@ -3199,23 +3561,21 @@ ByLayer
 370
    -1
 100
-AcDbLine
+AcDbCircle
  10
--70
+-29.00000000000001
  20
--50
- 11
--70
- 21
--70
+-28.99999999999999
+ 40
+6.000000000000003
   0
-LINE
+CIRCLE
   5
-62
+72
 100
 AcDbEntity
   8
-0
+Mount
   6
 ByLayer
  62
@@ -3223,23 +3583,21 @@ ByLayer
 370
    -1
 100
-AcDbLine
+AcDbCircle
  10
--80
+-29.00000000000001
  20
--60
- 11
--60
- 21
--60
+-28.99999999999999
+ 40
+2.649999999999999
   0
-LINE
+CIRCLE
   5
-63
+73
 100
 AcDbEntity
   8
-0
+Rotor
   6
 ByLayer
  62
@@ -3247,23 +3605,21 @@ ByLayer
 370
    -1
 100
-AcDbLine
+AcDbCircle
  10
-30
+0
  20
--60
- 11
-50
- 21
--60
+32
+ 40
+1.5
   0
-LINE
+CIRCLE
   5
-64
+74
 100
 AcDbEntity
   8
-0
+Stator
   6
 ByLayer
  62
@@ -3271,63 +3627,13 @@ ByLayer
 370
    -1
 100
-AcDbLine
+AcDbCircle
  10
-40
- 20
--50
- 11
-40
- 21
--70
-  0
-LINE
-  5
-65
-100
-AcDbEntity
-  8
 0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-30
  20
-70
- 11
-50
- 21
-70
-  0
-LINE
-  5
-66
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-40
- 20
-80
- 11
-40
- 21
-60
+32
+ 40
+1.5
   0
 ENDSEC
   0
